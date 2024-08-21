@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator | Ayub</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-wrapper">
+        <input type="text" placeholder="0" class="result-input" disabled />
+        <input type="text" class="operation-input" disabled />
+      </div>
+      <div class="keys">
+        <button>C</button>
+        <button onclick="operate(`+`)">+/-</button>
+        <button>%</button>
+        <button>/</button>
+        <button onclick="operate(`7`)">7</button>
+        <button onclick="operate(`8`)">8</button>
+        <button onclick="operate(`9`)">9</button>
+        <button onclick="operate(`*`)">x</button>
+        <button onclick="operate(`4`)">4</button>
+        <button onclick="operate(`6`)">5</button>
+        <button onclick="operate(`6`)">6</button>
+        <button onclick="operate(`-`)">-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+        <button>0</button>
+        <button>.</button>
+        <button>&Longleftarrow;</button>
+        <button onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
