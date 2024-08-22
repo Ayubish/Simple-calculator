@@ -13,10 +13,10 @@
         <input type="text" class="operation-input" disabled />
       </div>
       <div class="keys">
-        <button>C</button>
+        <button onclick="clearAll()">C</button>
         <button onclick="operate(`+`)">+/-</button>
-        <button>%</button>
-        <button>/</button>
+        <button onclick="operate(`%`)">%</button>
+        <button onclick="operate(`/`)">/</button>
         <button onclick="operate(`7`)">7</button>
         <button onclick="operate(`8`)">8</button>
         <button onclick="operate(`9`)">9</button>
@@ -25,14 +25,14 @@
         <button onclick="operate(`6`)">5</button>
         <button onclick="operate(`6`)">6</button>
         <button onclick="operate(`-`)">-</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
-        <button>0</button>
-        <button>.</button>
-        <button>&Longleftarrow;</button>
-        <button onclick="calculate()">=</button>
+        <button onclick="operate(`1`)">1</button>
+        <button onclick="operate(`2`)">2</button>
+        <button onclick="operate(`3`)">3</button>
+        <button onclick="operate(`+`)">+</button>
+        <button onclick="operate(`0`)">0</button>
+        <button onclick="operate(`.`)">.</button>
+        <button onclick="cancel()">&Longleftarrow;</button>
+        <button onclick="calculate()" id="equal-btn">=</button>
       </div>
     </div>
     <script src="main.js"></script>
